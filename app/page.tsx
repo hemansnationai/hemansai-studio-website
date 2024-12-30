@@ -28,17 +28,6 @@ const ExampleJsx = () => {
           AI Product & Service Studio
         </Balancer>
       </h1>
-      <a
-        className="h-16 block"
-        href="/contact"
-          target="_blank"
-      >
-        {/* <img
-          className="not-prose my-4"
-          src="https://vercel.com/button"
-          alt="Deploy with Vercel"
-        /> */}
-      </a>
       <p>
       AI studio with a scalable and structured approach to solve AI challenges for businesses and individuals.
       </p>
