@@ -31,6 +31,7 @@ const ExampleJsx = () => {
       <a
         className="h-16 block"
         href="/contact"
+          target="_blank"
       >
         {/* <img
           className="not-prose my-4"
@@ -45,6 +46,7 @@ const ExampleJsx = () => {
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
           href="/posts"
+          target="_blank"
         >
           <Pen size={32} />
           <span>
@@ -57,6 +59,8 @@ const ExampleJsx = () => {
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
           href="/pages"
+          target="_blank"
+
         >
           <File size={32} />
           <span>
@@ -69,6 +73,7 @@ const ExampleJsx = () => {
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
           href="/posts/authors"
+          target="_blank"
         >
           <User size={32} />
           <span>
@@ -81,6 +86,7 @@ const ExampleJsx = () => {
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
           href="/posts/tags"
+          target="_blank"
         >
           <Tag size={32} />
           <span>
@@ -93,6 +99,7 @@ const ExampleJsx = () => {
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
           href="/posts/categories"
+          target="_blank"
         >
           <Boxes size={32} />
           <span>
