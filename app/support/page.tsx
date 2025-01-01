@@ -19,7 +19,7 @@ const Page = (props) => {
         <br />
         <br />
         You can reach us by email at contact@hemansai.com <br />
-        or by phone at +91 6269217501
+        or by phone at +91 9074919189
         <br />
         <br />
         Our support team is available Monday through Friday, 9am to 5pm IST.
