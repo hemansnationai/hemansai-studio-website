@@ -64,7 +64,7 @@ export default async function JobListingPage() {
   return (
     <div className="container mx-auto px-4 py-8 font-clashDisplay">
       <h1 className="text-3xl font-bold mb-8">Careers</h1>
-      <JobListingGrid jobs={jobs} />
+      {/* <JobListingGrid jobs={jobs} /> */}
     </div>
   );
 }
