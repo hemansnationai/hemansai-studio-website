@@ -1,4 +1,5 @@
-const Page = (props) => {
+/* eslint-disable react/no-unescaped-entities */
+const Page = () => {
   return (
     <div className="py-8 md:py-20 container mx-auto">
       <h1>Terms of service</h1>

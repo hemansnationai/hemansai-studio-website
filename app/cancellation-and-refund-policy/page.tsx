@@ -1,4 +1,4 @@
-const Page = (props) => {
+const Page = () => {
   return (
     <div className="py-8 md:py-20 container mx-auto">
       <h1>Cancellation and Refund Policy</h1>

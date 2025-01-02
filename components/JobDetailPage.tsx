@@ -1,5 +1,5 @@
-import { FavouriteButton } from "./FavouriteButton";
-import { ApplyJobForm } from "./ApplyJobForm";
+// import { FavouriteButton } from "./FavouriteButton";
+// import { ApplyJobForm } from "./ApplyJobForm";
 
 interface IJobDetailProps {
   job: {
@@ -20,14 +20,14 @@ export function JobDetailPage({ job }: IJobDetailProps) {
         <p className="text-lg text-gray-600">{job.company}</p>
         {/* <p className="text-lg text-gray-600">{job.location}</p> */}
       </div>
-      <FavouriteButton jobId={job.id} isFavourite={job.favourites || false} />
+      {/* <FavouriteButton jobId={job.id} isFavourite={job.favourites || false} /> */}
       <div className="mt-6">
         <h2 className="text-xl font-semibold mb-2">Job Description</h2>
         <p className="text-gray-700">{job.description}</p>
       </div>
       <div className="mt-8">
         <h2 className="text-xl font-semibold mb-4">Apply for this job</h2>
-        <ApplyJobForm jobId={job.id} />
+        {/* <ApplyJobForm jobId={job.id} /> */}
       </div>
     </div>
   );

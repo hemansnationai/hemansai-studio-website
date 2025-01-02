@@ -1,4 +1,4 @@
-const Page = (props) => {
+const Page = () => {
   return (
     <div className="py-8 md:py-20 container mx-auto">
       <div className="MuiBox-root css-ohldf6">

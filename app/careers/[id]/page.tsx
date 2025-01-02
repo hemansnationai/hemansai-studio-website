@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { JobDescription } from '@/components/JobDescription'
-import { ApplicationForm } from '@/components/ApplicationForm'
+// import { ApplicationForm } from '@/components/ApplicationForm'
 
 async function getJob(id: string) {
   await new Promise((resolve) => setTimeout(resolve, 1000))
@@ -61,7 +61,7 @@ export default async function JobDescriptionPage({ params }: { params: { id: str
   return (
     <div className="container mx-auto px-4 py-8">
       <JobDescription job={job} />
-      <ApplicationForm jobId={job.id} jobTitle={job.title} />
+      {/* <ApplicationForm jobId={job.id} jobTitle={job.title} /> */}
     </div>
   )
 }
