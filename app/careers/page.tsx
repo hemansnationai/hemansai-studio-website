@@ -1,4 +1,6 @@
 import { JobListingGrid } from "@/components/JobListingGrid";
+import { Pen } from "lucide-react";
+import Link from "next/link";
 
 async function getJobs() {
   await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -62,8 +64,23 @@ export default async function JobListingPage() {
   const jobs = await getJobs();
 
   return (
-    <div className="container mx-auto px-4 py-8 font-clashDisplay">
+    <div className="container mx-auto px-4 py-8 font-clashDisplay max-w-4xl">
       <h1 className="text-3xl font-bold mb-8">Careers</h1>
+      <div className="grid md:grid-cols-3 gap-4 mt-6 not-prose">
+        <Link
+          className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
+          href="https://www.dextar.co/"
+          target="_blank"
+        >
+          <Pen size={32} />
+          <span>
+            Dextar{" "}
+            <span className="block text-sm text-muted-foreground">
+              AI Engineering & Consulting
+            </span>
+          </span>
+        </Link>
+      </div>
       {/* <JobListingGrid jobs={jobs} /> */}
     </div>
   );

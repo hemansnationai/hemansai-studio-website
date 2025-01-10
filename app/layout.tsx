@@ -95,7 +95,7 @@ const Nav = ({ className, children, id }: NavProps) => {
           <div className="mx-2 hidden md:flex">
             {Object.entries(mainMenu).map(([key, href]) => (
               <Button key={href} asChild variant="ghost" size="sm">
-                <Link href={href} target="_blank">
+                <Link href={href}>
                   {key.charAt(0).toUpperCase() + key.slice(1)}
                 </Link>
               </Button>

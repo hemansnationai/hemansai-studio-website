@@ -34,58 +34,59 @@ const ExampleJsx = () => {
       <div className="grid md:grid-cols-3 gap-4 mt-6 not-prose">
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
-          href="/posts"
+          href="https://www.dextar.co/"
           target="_blank"
         >
           <Pen size={32} />
           <span>
-            Posts{" "}
+            Dextar{" "}
             <span className="block text-sm text-muted-foreground">
-              All posts from your WordPress
+              AI Engineering & Consulting
             </span>
           </span>
         </Link>
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
-          href="/pages"
+          href="/"
           target="_blank"
 
         >
           <File size={32} />
           <span>
-            Pages{" "}
+            MasterDexter{" "}
             <span className="block text-sm text-muted-foreground">
-              Custom pages from your WordPress
+              Agentic AI Assisted Learning Platform
             </span>
           </span>
         </Link>
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
-          href="/posts/authors"
+          href="https://god-level-python.notion.site/Neurons-to-GenerativeAI-Bootcamp-Live-Self-paced-V2-a59ec2f641084c488179271fc077f0c4?pvs=4"
           target="_blank"
         >
           <User size={32} />
           <span>
-            Authors{" "}
+            AI Leadership Academy
+{" "}
             <span className="block text-sm text-muted-foreground">
-              List of the authors from your WordPress
+              Be in the top 1% of AI Leaders
             </span>
           </span>
         </Link>
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
-          href="/posts/tags"
+          href="https://newsletter.himanshuramchandani.co/subscribe"
           target="_blank"
         >
           <Tag size={32} />
           <span>
-            Tags{" "}
+            AI Newsletter{" "}
             <span className="block text-sm text-muted-foreground">
-              Content by tags from your WordPress
+              Actionable Tips and Insights about AI Leadership, building AI Teams/Products.
             </span>
           </span>
         </Link>
-        <Link
+        {/* <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
           href="/posts/categories"
           target="_blank"
@@ -109,7 +110,7 @@ const ExampleJsx = () => {
               How to use `next-wp`
             </span>
           </span>
-        </a>
+        </a> */}
       </div>
     </article>
   );
