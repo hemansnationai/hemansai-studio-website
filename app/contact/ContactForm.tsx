@@ -54,7 +54,7 @@ export default function ContactForm() {
       setFile(null);
     } catch (error) {
       // toast({
-      //   title: "Error submitting form",
+    //   title: "Error submitting form",
       //   description: "Please try again later.",
       //   variant: "destructive",
       // });
@@ -67,8 +67,8 @@ export default function ContactForm() {
     <section className="py-24 bg-white text-black justify-start" id="contacts">
       <div className="container mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-          <h2 className="text-4xl font-bold text-left mb-8">Multiply Your Results with AI</h2>
-          <p className="text-left mb-12 text-xl w-3/4">Ready to transform your business with AI? Let's discuss how Dextar can help you overcome challenges and seize opportunities. Reach out to us using the form below or email us directly at team@dextar.co</p>
+          <h2 className="text-4xl font-bold text-left mb-8">Want to Connect with us</h2>
+          <p className="text-left mb-12 text-xl w-3/4">Want to Connect with us</p>
           <form onSubmit={handleSubmit} className="max-w-2xl space-y-6 bg-white p-8 rounded-lg shadow-lg">
             <Input
               name="fullName"

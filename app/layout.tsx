@@ -13,7 +13,7 @@ import { mainMenu, contentMenu } from "@/menu.config";
 import { Section, Container } from "@/components/craft";
 import Balancer from "react-wrap-balancer";
 
-import Logo from "@/public/logo.svg";
+// import Logo from "/logo.svg";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -83,7 +83,7 @@ const Nav = ({ className, children, id }: NavProps) => {
         >
           <h2 className="sr-only">HemansAI</h2>
           <Image
-            src={Logo}
+            src={"/logo.svg"}
             alt="Logo"
             className="dark:invert"
             width={50}
@@ -120,7 +120,7 @@ const Footer = () => {
             <Link href="/">
               <h3 className="sr-only">/</h3>
               <Image
-                src={Logo}
+                src={"/logo.svg"}
                 alt="Logo"
                 width={60}
                 height={20}
