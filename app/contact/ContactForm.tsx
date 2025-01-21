@@ -67,8 +67,9 @@ export default function ContactForm() {
     <section className="py-24 bg-white text-black justify-start" id="contacts">
       <div className="container mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-          <h2 className="text-4xl font-bold text-left mb-8">Want to Connect with us</h2>
-          <p className="text-left mb-12 text-xl w-3/4">Want to Connect with us</p>
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
+          <h2 className="text-4xl font-bold text-left mb-8"> Let's Build Together</h2>
+          <p className="text-left mb-12 text-xl w-3/4">Our team will reach out to you in 24 Hours.</p>
           <form onSubmit={handleSubmit} className="max-w-2xl space-y-6 bg-white p-8 rounded-lg shadow-lg">
             <Input
               name="fullName"
@@ -154,7 +155,6 @@ export default function ContactForm() {
               value={formData.message}
               onChange={handleInputChange}
             />
-            <p className="text-sm text-gray-500">Max file size: 2MB. Allowed file formats: doc, docx, xls, xlsx, pdf, jpg, png.</p>
             <Button
               variant="default"
               type="submit"
