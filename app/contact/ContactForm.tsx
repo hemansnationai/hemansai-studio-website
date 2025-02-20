@@ -185,7 +185,7 @@ function ThankYouMessage() {
         We appreciate your interest. Our team will review your request and get back to you within 24 hours.
       </p>
       <p className="text-md text-gray-600">
-        If you have any urgent questions, please don&apos;t hesitate to contact us directly.
+        If you have any urgent questions, please don&apos;t hesitate to contact us via <a href="mailto:connect@himanshuramchandani.co">email</a>
       </p>
     </motion.div>
   )
