@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { motion } from "framer-motion";
 import { postToDiscordWebhook } from "@/lib/discord";
+import { toast } from "react-toastify";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -45,6 +46,17 @@ export default function ContactForm() {
     }
   };
 
+  function clearFormData() {
+    setFormData({
+      fullName: "",
+      companyName: "",
+      email: "",
+      countryCode: "",
+      phoneNumber: "",
+      message: "",
+    })
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -52,12 +64,10 @@ export default function ContactForm() {
     try {
       await postToDiscordWebhook("https://discord.com/api/webhooks/1324037343065276556/xlz9GX-Wli49iAxLt-UszAXUjh8zGMd7XHBPP9BeP35xHFxWpDcS0T_PS9k5CP4H8FtO", formData);
       setFile(null);
+      toast.success("Thank you for submitting the form, we will get back to you shortly")
+      clearFormData()
     } catch (error) {
-      // toast({
-    //   title: "Error submitting form",
-      //   description: "Please try again later.",
-      //   variant: "destructive",
-      // });
+      toast.error( "Error submitting form");
     } finally {
       setIsSubmitting(false);
     }
@@ -164,7 +174,7 @@ export default function ContactForm() {
               {isSubmitting ? "Submitting..." : "Request a Brainstorm"}
             </Button>
             <p className="text-sm text-gray-500 text-center">
-              By clicking "Request a Brainstorm", you agree to our Terms of Use and Privacy Policy.
+              By clicking Request a Brainstorm, you agree to our Terms of Use and Privacy Policy.
             </p>
           </form>
         </motion.div>

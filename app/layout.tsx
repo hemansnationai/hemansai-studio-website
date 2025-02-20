@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
+import { ToastContainer } from "react-toastify"
 
 import "./globals.css";
 
@@ -90,6 +91,7 @@ const Nav = ({ className, children, id }: NavProps) => {
             height={20}
           ></Image>
         </Link>
+        <ToastContainer />
         {children}
         <div className="flex items-center gap-2">
           <div className="mx-2 hidden md:flex">
