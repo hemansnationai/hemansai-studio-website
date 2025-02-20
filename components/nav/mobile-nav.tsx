@@ -38,7 +38,7 @@ export function MobileNav() {
           onOpenChange={setOpen}
         >
           <ArrowRightSquare className="mr-2 h-4 w-4" />
-          <span className="text-muted-foreground">My Site</span>
+          <span className="text-muted-foreground">HemansAI</span>
         </MobileLink>
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
           <div className="flex flex-col space-y-3">
@@ -49,13 +49,13 @@ export function MobileNav() {
                 {key.charAt(0).toUpperCase() + key.slice(1)}
               </MobileLink>
             ))}
-            <h3 className="text-small pt-6">Blog Menu</h3>
+            {/* <h3 className="text-small pt-6">Blog Menu</h3>
             <Separator />
             {Object.entries(contentMenu).map(([key, href]) => (
               <MobileLink key={key} href={href} onOpenChange={setOpen}>
                 {key.charAt(0).toUpperCase() + key.slice(1)}
               </MobileLink>
-            ))}
+            ))} */}
           </div>
         </ScrollArea>
       </SheetContent>

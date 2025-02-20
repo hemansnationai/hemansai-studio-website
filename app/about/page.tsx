@@ -1,99 +1,62 @@
-import React from "react";
+import Link from "next/link"
 
-const AboutPage = () => {
+export default function AboutPage() {
   return (
-    <div className="about-page bg-gray-50 min-h-screen py-10 px-5">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8">About HemansAI</h1>
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:max-w-4xl">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-12">About HemansAI</h1>
 
-        <section className="mb-10">
-          <p className="text-lg text-gray-700 mb-4">
-            At <strong>HemansAI</strong>, we are an{" "}
-            <span className="text-indigo-600 font-semibold">
-              AI Product & Service Studio
-            </span>{" "}
-            dedicated to empowering businesses and individuals with cutting-edge
-            artificial intelligence solutions. By combining innovation with a
-            structured and scalable approach, we solve complex AI challenges
-            tailored to your specific needs.
-          </p>
-          <p className="text-lg text-gray-700">
-            Whether you are an enterprise aiming to streamline operations or a
-            leader seeking to enhance AI expertise,{" "}
-            <span className="font-semibold">HemansAI</span> is your trusted
-            partner on this transformative journey.
-          </p>
-        </section>
+          <section className="mb-16">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">AI Product & Service Studio</h3>
+            <p className="text-lg leading-8 text-gray-600">
+              HemansAI is committed to helping businesses and individuals with artificial intelligence solutions. We
+              bring a structured and scalable approach to solving AI challenges. Whether you're an enterprise looking to
+              streamline operations or a leader aiming to build AI expertise, we are your trusted partner on this
+              journey.
+            </p>
+          </section>
 
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">Our Services</h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>
-              <strong>AI Engineering:</strong> Designing and deploying robust AI
-              solutions tailored to your goals.
-            </li>
-            <li>
-              <strong>AI Consulting:</strong> Strategic guidance to help you
-              unlock the full potential of AI.
-            </li>
-            <li>
-              <strong>AI Development:</strong> Building custom AI tools and
-              applications that deliver results.
-            </li>
-            <li>
-              <strong>AI Education:</strong> Equipping individuals and teams
-              with the skills to thrive in an AI-driven world.
-            </li>
-          </ul>
-        </section>
+          <section className="mb-16">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Solving AI Challenges with AI Expertise</h3>
+            <p className="text-lg leading-8 text-gray-600">
+              At HemansAI, we offer a diverse range of AI-focused services and products from AI Engineering, Consulting,
+              and Development to Education. We believe that AI has the power to transform industries and improve lives.
+              Implementing AI requires the right tools, knowledge, and guidance. At HemansAI, we are passionate about
+              bridging the gap between technology and real-world applications.
+            </p>
+          </section>
 
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">Our Journey</h2>
-          <p className="text-lg text-gray-700 mb-4">
-            Founded in <strong>2018</strong> by{" "}
-            <a
-              href="https://www.linkedin.com/in/hemansnation/"
-              className="text-indigo-600 underline"
-              target="_blank"
-              rel="noopener noreferrer"
+          <section className="mb-16">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Building an AI Ecosystem Since 2018</h3>
+            <p className="text-lg leading-8 text-gray-600">
+              HemansAI was started in 2018 by{" "}
+              <Link
+                href="https://www.linkedin.com/in/hemansnation/"
+                className="text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                Himanshu Ramchandani
+              </Link>
+              . At that time we were doing research and providing services in AI. From there we are continuously
+              learning and building our way to create an ecosystem for AI-focused products and services. Be part of our
+              mission to make AI accessible, scalable, and impactful for everyone, helping businesses stay ahead of the
+              curve and individuals build meaningful skills for the future.
+            </p>
+          </section>
+
+          <div className="mt-10 flex items-center justify-center gap-x-6 text-white">
+            <Link
+              href="/contact"
+              className="rounded-md  text-white px-3.5 py-2.5 text-sm font-semibold  shadow-sm hover:border hover:border-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
             >
-              Himanshu Ramchandani
-            </a>
-            , HemansAI began as a research-focused initiative providing AI
-            services. Over the years, we have evolved into a comprehensive
-            ecosystem for{" "}
-            <strong>AI-focused products and services</strong>, continuously
-            learning, growing, and innovating to stay ahead of the curve.
-          </p>
-          <p className="text-lg text-gray-700">
-            Our mission is simple yet ambitious:
-          </p>
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>
-              <strong>Make AI Accessible:</strong> Bringing AI within reach for
-              businesses and individuals.
-            </li>
-            <li>
-              <strong>Make AI Scalable:</strong> Developing solutions that grow
-              with your needs.
-            </li>
-            <li>
-              <strong>Make AI Impactful:</strong> Driving measurable
-              improvements across industries and communities.
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Let’s Work Together</h2>
-          <p className="text-lg text-gray-700">
-            Be part of the AI revolution with HemansAI. Together, we can shape
-            a smarter, more efficient, and impactful future.
-          </p>
-        </section>
+              Contact Us
+            </Link>
+            <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">
+              Learn more about our services <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
-  );
-};
-
-export default AboutPage;
+  )
+}
