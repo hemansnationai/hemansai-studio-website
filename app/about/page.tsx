@@ -11,7 +11,7 @@ export default function AboutPage() {
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">AI Product & Service Studio</h3>
             <p className="text-lg leading-8 text-gray-600">
               HemansAI is committed to helping businesses and individuals with artificial intelligence solutions. We
-              bring a structured and scalable approach to solving AI challenges. Whether you're an enterprise looking to
+              bring a structured and scalable approach to solving AI challenges. Whether you&apos;re an enterprise looking to
               streamline operations or a leader aiming to build AI expertise, we are your trusted partner on this
               journey.
             </p>
