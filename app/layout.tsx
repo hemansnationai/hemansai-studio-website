@@ -95,7 +95,7 @@ const Nav = ({ className, children, id }: NavProps) => {
         {children}
         <div className="flex items-center gap-2">
           <div className="mx-2 hidden md:flex">
-            {Object.entries(mainMenu).map(([key, href]) => (
+            {Object.entries(mainMenu).slice(0,3).map(([key, href]) => (
               <Button key={href} asChild variant="ghost" size="sm">
                 <Link href={href}>
                   {key.charAt(0).toUpperCase() + key.slice(1)}
@@ -151,7 +151,7 @@ const Footer = () => {
             ))}
           </div>
           <div className="flex flex-col gap-2 text-sm">
-            <h5 className="font-medium text-base">Blog</h5>
+            <h5 className="font-medium text-base">Legal</h5>
             {Object.entries(contentMenu).map(([key, href]) => (
               <Link
                 className="hover:underline underline-offset-4"

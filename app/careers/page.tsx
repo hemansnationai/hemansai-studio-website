@@ -64,7 +64,7 @@ export default async function JobListingPage() {
   const jobs = await getJobs();
 
   return (
-    <div className="container mx-auto px-4 py-8 font-clashDisplay max-w-4xl">
+    <div className="container mx-auto px-4 py-24 font-clashDisplay max-w-4xl">
       <h1 className="text-3xl font-bold mb-8">Careers</h1>
       <div className="grid md:grid-cols-3 gap-4 mt-6 not-prose">
         <Link
