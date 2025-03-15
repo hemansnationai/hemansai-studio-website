@@ -65,14 +65,14 @@ export default function ContactForm() {
   return (
     <section className="py-24 bg-white text-black justify-start" id="contacts">
       <div className="container mx-auto">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="w-fit mx-auto">
           <h2 className="text-4xl font-bold text-left mb-8">Let&apos;s Build Together</h2>
           <p className="text-left mb-12 text-xl w-3/4">Our team will reach out to you in 24 Hours.</p>
 
           {isSubmitted ? (
             <ThankYouMessage />
           ) : (
-            <form onSubmit={handleSubmit} className="max-w-2xl space-y-6 bg-white p-8 rounded-lg shadow-lg">
+            <form onSubmit={handleSubmit} className="max-w-2xl space-y-6 bg-white py-8">
               <Input
                 name="fullName"
                 placeholder="Full Name"
