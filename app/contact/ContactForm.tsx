@@ -162,7 +162,8 @@ export default function ContactForm() {
                 {isSubmitting ? "Submitting..." : "Request a Brainstorm"}
               </Button>
               <p className="text-sm text-gray-500 text-center">
-                By clicking Request a Brainstorm, you agree to our Terms of Use and Privacy Policy.
+                By clicking Request a Brainstorm, you agree to our Terms of Use and Privacy Policy. <br />
+                Or you can directly reach out here: contact@hemansai.com 
               </p>
             </form>
           )}
