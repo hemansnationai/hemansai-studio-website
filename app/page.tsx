@@ -82,7 +82,7 @@ const ExampleJsx = () => {
           <span>
             AI Newsletter{" "}
             <span className="block text-sm text-muted-foreground">
-            Get AI Leadership & Engineering how-to's, case studies, insightful stories, news, research paper breakdowns, webinars, and resources.
+            Get AI Leadership & Engineering how-to, case studies, insightful stories, news, research paper breakdowns, webinars, and resources.
             </span>
           </span>
         </Link>
