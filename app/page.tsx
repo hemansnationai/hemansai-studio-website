@@ -47,7 +47,7 @@ const ExampleJsx = () => {
         </Link>
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
-          href="https://www.masterdexter.co/"
+          href="https://www.masterdexter.io/"
           target="_blank"
 
         >
