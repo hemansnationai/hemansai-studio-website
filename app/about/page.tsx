@@ -46,7 +46,7 @@ export default function AboutPage() {
 
           <div className="mt-10 flex items-center justify-center gap-x-6 text-white">
             <Link
-              href="/contact"
+              href="/contact-us"
               className="rounded-md  text-white px-3.5 py-2.5 text-sm font-semibold  shadow-sm hover:border hover:border-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
             >
               Contact Us

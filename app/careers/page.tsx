@@ -74,9 +74,9 @@ export default async function JobListingPage() {
         >
           <Pen size={32} />
           <span>
-            Dextar{" "}
+            Full Stack Engineer{" "}
             <span className="block text-sm text-muted-foreground">
-              AI Engineering & Consulting
+              Closed
             </span>
           </span>
         </Link>

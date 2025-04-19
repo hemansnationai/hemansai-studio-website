@@ -104,7 +104,7 @@ const Nav = ({ className, children, id }: NavProps) => {
             ))}
           </div>
           <Button asChild className="hidden sm:flex">
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact-us">Contact Us</Link>
           </Button>
           <MobileNav />
         </div>

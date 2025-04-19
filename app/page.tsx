@@ -47,7 +47,7 @@ const ExampleJsx = () => {
         </Link>
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
-          href="/"
+          href="https://www.masterdexter.co/"
           target="_blank"
 
         >
@@ -55,21 +55,21 @@ const ExampleJsx = () => {
           <span>
             MasterDexter{" "}
             <span className="block text-sm text-muted-foreground">
-              Agentic AI Assisted Learning Platform
+            How to Build & Apply AI for You (and Your Business)
             </span>
           </span>
         </Link>
         <Link
           className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
-          href="https://god-level-python.notion.site/Neurons-to-GenerativeAI-Bootcamp-Live-Self-paced-V2-a59ec2f641084c488179271fc077f0c4?pvs=4"
+          href="https://www.masterdexter.io/ai-engineer-hq"
           target="_blank"
         >
           <User size={32} />
           <span>
-            AI Leadership Academy
+            AI Engineer HQ
 {" "}
             <span className="block text-sm text-muted-foreground">
-              Be in the top 1% of AI Leaders
+            AI Engineering Without Years of Struggle or a PhD!
             </span>
           </span>
         </Link>
@@ -82,7 +82,20 @@ const ExampleJsx = () => {
           <span>
             AI Newsletter{" "}
             <span className="block text-sm text-muted-foreground">
-              Actionable Tips and Insights about AI Leadership, building AI Teams/Products.
+            Get AI Leadership & Engineering how-to's, case studies, insightful stories, news, research paper breakdowns, webinars, and resources.
+            </span>
+          </span>
+        </Link>
+        <Link
+          className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
+          href="https://god-level-python.notion.site/The-Elite-AI-Leadership-Accelerator-1adffb33c49580488ae2c6179178a51b?pvs=4"
+          target="_blank"
+        >
+          <Tag size={32} />
+          <span>
+            The Elite [AI Leadership Accelerator]{" "}
+            <span className="block text-sm text-muted-foreground">
+            Build your second brain for Leading AI Products/Projects.
             </span>
           </span>
         </Link>
